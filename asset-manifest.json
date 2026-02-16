@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/dynamic-react-audio-player/static/css/main.75c232f6.css",
+    "main.js": "/dynamic-react-audio-player/static/js/main.67ebdb93.js",
+    "index.html": "/dynamic-react-audio-player/index.html",
+    "main.75c232f6.css.map": "/dynamic-react-audio-player/static/css/main.75c232f6.css.map",
+    "main.67ebdb93.js.map": "/dynamic-react-audio-player/static/js/main.67ebdb93.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.75c232f6.css",
+    "static/js/main.67ebdb93.js"
+  ]
+}
