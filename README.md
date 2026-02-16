@@ -3,8 +3,8 @@
 
 A modern and responsive music player built using ReactJS with custom audio controls and dynamic playlist functionality.
 
-🔗 Live Demo: https://your-username.github.io/repository-name  
-📂 GitHub Repository: https://github.com/your-username/repository-name
+🔗 Live Demo: https://Vindiya14.github.io/dynamic-react-audio-player/
+📂 GitHub Repository: https://github.com/Vindiya14/dynamic-react-audio-player
 
 ---
 
