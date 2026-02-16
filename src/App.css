@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root{
+    --white: #ffffff;
+    --grey: #9e9e9e;
+    --yellow: #f5c542;
+    --glassBlack: rgba(0,0,0,0.65);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    background: #000;
+}
+
+/* MAIN CONTAINER */
+.container{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+}
+
+/* OPTIONAL VIDEO BACKGROUND */
+.backgroundVideo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -2;
+}
+
+/* DARK OVERLAY */
+.blackScreen{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0,0,0,0.6);
+    z-index: -1;
+}
+
+/* MUSIC CARD */
+.music-Container{
+    width: 360px;
+    padding: 30px;
+    border-radius: 28px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1.5px solid rgba(255, 255, 255, 0.25);
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+}
+
+/* TITLE */
+.musicPlayer{
+    margin-bottom: 10px;
+    color: var(--grey);
+    font-size: 0.95rem;
+}
+
+/* SONG NAME */
+.music-Head-Name{
+    font-size: 1.5rem;
+    color: var(--white);
+    margin: 0;
+}
+
+/* ARTIST NAME */
+.music-Artist-Name{
+    color: var(--yellow);
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-top: 6px;
+}
+
+/* SONG IMAGE */
+#songAvatar{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: 20px 0;
+    animation: animateAvatar 1.5s linear infinite;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    /* WHITE OUTLINE */
+    border: 3px solid rgba(255, 255, 255, 0.9);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+#songAvatar:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(240, 3, 3, 0.4);
+}
+
+
+@keyframes animateAvatar {
+    0%,100%{ transform: scale(1); }
+    50%{ transform: scale(1.04); }
+}
+
+/* TIMER */
+.musicTimerDiv{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: var(--grey);
+}
+
+/* PROGRESS BAR */
+.musicProgressBar{
+    width: 100%;
+    height: 6px;
+    margin: 12px 0 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* CONTROLS */
+.playBtn{
+    font-size: 34px;
+    margin: 0 14px;
+    color: var(--white);
+}
+
+.musicControler{
+    font-size: 26px;
+    color: var(--white);
+}
+
+/* REMOVE WHITE BOTTOM BAR */
+.changeBackBtn{
+    display: none;
+}
+
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 480px){
+    .music-Container{
+        width: 90%;
+        padding: 24px;
+        border-radius: 22px;
+    }
+
+    #songAvatar{
+        width: 150px;
+        height: 150px;
+    }
+
+    .music-Head-Name{
+        font-size: 1.3rem;
+    }
+
+    .music-Artist-Name{
+        font-size: 1rem;
+    }
+}
